@@ -1,0 +1,7 @@
+{
+  "name": "Ejemplo Shopify",
+  "description": "Un ejemplo de uso de la API de Shopify para Diana de Workana",
+  "repository": "https://github.com/sergioherher/ejemplo-shopify",
+  "logo": "https://wkncdn.com/newx/assets/build/img/logos-v3/free_logo_es_AR.fd63d6514.png?v=1",
+  "keywords": ["node", "express", "static", "shopify"]
+}
