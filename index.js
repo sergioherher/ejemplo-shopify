@@ -10,7 +10,7 @@ const request = require('request-promise');
 const apiKey = process.env.SHOPIFY_API_KEY;
 const apiSecret = process.env.SHOPIFY_API_SECRET;
 const scopes = 'read_products';
-const forwardingAddress = "{ngrok forwarding address}"; // Replace this with your HTTPS Forwarding address
+const forwardingAddress = "https://ejemplo-shopify.herokuapp.com/"; // Replace this with your HTTPS Forwarding address
 
 app.get('/shopify', (req, res) => {
   const shop = req.query.shop;
@@ -26,7 +26,7 @@ app.get('/shopify', (req, res) => {
     res.cookie('state', state);
     res.redirect(installUrl);
   } else {
-    return res.status(400).send('Missing shop parameter. Please add ?shop=your-development-shop.myshopify.com to your request');
+    return res.status(400).send('Missing shop parameter. Please add ?shop=tienda-ejemplo-diana.myshopify.com to your request');
   }
 });
 
